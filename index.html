@@ -33,8 +33,28 @@
         <div class="price">💰 මිල: Rs. 450 (පොත් දෙකම) – Direct WhatsApp PDF!</div>
 
         <div class="btn-container">
-            <a href="https://wa.me/94789645177?text=%20Trading%20Books%20(PDF)%20" class="btn">📩 දැන්ම Message කරන්න</a>
+            <a id="wa-btn" href="https://wa.me/94789645177?text=Ebook%20give%20me." class="btn" aria-label="WhatsApp">📩 දැන්ම Message කරන්න</a>
         </div>
+        <script>
+          (function(){
+            const btn = document.getElementById('wa-btn');
+            if(!btn) return;
+            btn.addEventListener('mouseenter', ()=>{
+              btn.dataset.orig = btn.innerHTML;
+              btn.innerHTML = 'WhatsApp';
+              btn.style.transform = 'scale(1.06)';
+            });
+            btn.addEventListener('mouseleave', ()=>{
+              if(btn.dataset.orig) btn.innerHTML = btn.dataset.orig;
+              btn.style.transform = 'scale(1)';
+            });
+            btn.addEventListener('click', function(e){
+              btn.dataset.orig = btn.innerHTML;
+              btn.innerHTML = 'Opening WhatsApp...';
+              btn.style.transform = 'scale(1.02)';
+            });
+          })();
+        </script>
 
         <p style="font-size:17px;color:#333;margin-top:20px;">
           ✅ PDF eBooks දෙකම Direct WhatsApp හරහා.<br>
