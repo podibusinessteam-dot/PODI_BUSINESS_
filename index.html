@@ -6,99 +6,103 @@
   <title>Forex Trading Basic Course - PODI BUSINESS TEAM</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <style>
-    body { background-color: #0a0a0a; color: #fff; font-family: 'Segoe UI', sans-serif; }
-    .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    body { background-color: #2b2b2b; color: #fff; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); transition: transform 0.25s, box-shadow 0.25s; }
+    .glass:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,255,255,0.15); }
     .floating-wa { position: fixed; bottom: 20px; right: 20px; z-index: 50; animation: pulse 2s infinite; }
-    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .header-gradient { background: linear-gradient(90deg, #00c6ff, #00ff85); -webkit-background-clip: text; color: transparent; }
+    .progress-bar { position: fixed; top:0; left:0; height:4px; background: #00ff85; z-index:100; width:0%; }
+    .section-title { border-left: 4px solid #00ff85; padding-left: 0.5rem; }
+    a.button { background: linear-gradient(to right, #00c6ff, #00ff85); color: #000; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.75rem; display: inline-block; transition: opacity 0.2s; }
+    a.button:hover { opacity: 0.85; }
   </style>
+  <script>
+    window.addEventListener('scroll', function() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progress').style.width = scrolled + '%';
+    });
+  </script>
 </head>
 <body>
-  <header class="py-6 text-center bg-neutral-900 border-b border-neutral-800">
-    <h1 class="text-3xl font-bold">Forex Trading Basic Course</h1>
-    <p class="text-neutral-400">Powered by PODI BUSINESS TEAM</p>
+  <div id="progress" class="progress-bar"></div>
+
+  <header class="py-8 text-center border-b border-neutral-800">
+    <h1 class="text-4xl font-bold header-gradient">Forex Trading Basic Course</h1>
+    <p class="text-neutral-300 mt-2">PODI BUSINESS TEAM සමඟ 5+ වසරක Trading අත්දැකීම්</p>
   </header>
 
-  <section class="py-10 max-w-5xl mx-auto px-4 text-center">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-4">ඔබේ Trading ගමන අදම ආරම්භ කරන්න</h2>
-    <p class="text-neutral-300 text-lg">ප්‍රථම පියවරක් ගන්න – සරල Forex Trading පාඨමාලාවක් සමඟ</p>
+  <section class="py-12 max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4 section-title">ඔබේ Trading ගමන අදම ආරම්භ කරන්න</h2>
+    <p class="text-neutral-300 text-lg mb-8">මෙම පාඨමාලාව සරල, practical හා step-by-step lesson එකක් වන අතර, ඔබට trading skills වර්ධනය කරගැනීමට උපකාරී වේ. Mobile සහ Desktop එකෙන් පහසුවෙන් stream කළ හැක.</p>
 
-    <div class="mt-8">
+    <div class="mt-6 mb-8">
       <iframe src="https://drive.google.com/file/d/1rBNhY6oz8EaMN0XB2hxnwsW2cVreq2Gu/preview" width="100%" height="400" allow="autoplay" class="rounded-2xl border border-neutral-800" autoplay muted loop></iframe>
     </div>
 
-    <div class="mt-6">
-      <p class="text-emerald-400 text-xl font-semibold">Price: Rs. 1899</p>
-      <a href="#payment" class="mt-4 inline-block bg-emerald-500 text-black font-semibold px-6 py-3 rounded-xl hover:bg-emerald-400">Buy Now</a>
-    </div>
+    <p class="text-emerald-400 text-2xl font-semibold mb-4">මිල: රු. 1899</p>
+    <a href="#payment" class="button mb-8">දැන් මිලදී ගන්න</a>
 
-    <ul class="mt-5 space-y-2 text-neutral-300 text-sm">
-      <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span> පහසුවෙන් stream කිරීමෙන් ඔබට ඕනෑම වේලාවක හා ඕනෑම උපාංගයකින් පාඩම් බලන්න පුළුවන් — විශාල files එකක් download කරන්න අවශ්‍ය කරන්නේ නැත.</li>
-      <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span> සම්පූර්ණ පාඨමාලාව — පරීක්ෂා කල strategy notes + PDFs.</li>
-      <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span> Support: WhatsApp/Email — අපේ team එක ඔබගේ trading ප්‍රශ්න සඳහා සහාය ලබා දේ.</li>
-      <li class="flex items-start gap-2"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400"></span> **Free:** Candlestick Pattern PDF සහ Chart Pattern PDF (දෙකම) — purchase එකට අමතරව ලබා දේ.</li>
+    <ul class="mt-5 space-y-3 text-neutral-300 text-left max-w-3xl mx-auto">
+      <li>පහසුවෙන් stream කිරීමෙන් ඔබට ඕනෑම වේලාවක හා ඕනෑම උපාංගයකින් පාඩම් බලන්න පුළුවන් — විශාල files download අවශ්‍ය නැත.</li>
+      <li>සම්පූර්ණ පාඨමාලාව — strategy notes + PDFs සමඟ.</li>
+      <li>PODI BUSINESS TEAM WhatsApp/Email මඟින් support — trading questions සඳහා assist කරයි.</li>
+      <li>**Free:** Candlestick Pattern PDF සහ Chart Pattern PDF (දෙකම) purchase එකට අමතර.</li>
+      <li>Step-by-step practical examples, trade journals සහ chart analysis — ඔබේ trading understanding වැඩි කරන්න.</li>
     </ul>
   </section>
 
-  <section id="benefits" class="py-12 bg-neutral-950 border-t border-neutral-900">
+  <section id="benefits" class="py-12 bg-[#2b2b2b] border-t border-neutral-800">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl sm:text-3xl font-bold">ඔබට ලැබෙන්නෙ මේවායි</h2>
-      <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
+      <h2 class="text-3xl font-bold section-title mb-6">ඔබට ලැබෙන්නෙ මේවායි</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
         <div class="glass rounded-2xl p-5">
           <h3 class="font-semibold">ඕනෑම උපාංගයකින් නැරඹිය හැක</h3>
-          <p class="mt-2 text-neutral-300">Mobile සහ Desktop යන දෙකකටම optimize කරලා තියෙනව — ඔබට smartphone එකෙන් වෙලාවකට සරලව බලන්න පුළුවන්.</p>
+          <p class="mt-2 text-neutral-300">Mobile සහ Desktop optimize — smartphone එකෙන් සරලව බලන්න.</p>
         </div>
         <div class="glass rounded-2xl p-5">
-          <h3 class="font-semibold">හදිසි ලැබෙන practical results</h3>
-          <p class="mt-2 text-neutral-300">Simple, step-by-step lessons — charts examples හා trade journals සමඟ — නිවැරදි අදහසක් ලබාදෙයි.</p>
+          <h3 class="font-semibold">Practical Results</h3>
+          <p class="mt-2 text-neutral-300">Step-by-step lessons, charts examples හා trade journals සමඟ — නිවැරදි අදහසක් ලබාදෙයි.</p>
         </div>
         <div class="glass rounded-2xl p-5">
-          <h3 class="font-semibold">මනා ප්‍රතිලාභ සහ support</h3>
-          <p class="mt-2 text-neutral-300">PODI BUSINESS TEAM එක ඔබේ trading ප්‍රශ්න සඳහා WhatsApp/Email මගින් උදව් කරනවා — purchase කරන සෑමදෙනාටම පෞද්ගලික සහාය.</p>
+          <h3 class="font-semibold">Team Support</h3>
+          <p class="mt-2 text-neutral-300">PODI BUSINESS TEAM WhatsApp/Email මගින් assistance — purchase කරන සෑමදෙනාටම.</p>
         </div>
         <div class="glass rounded-2xl p-5">
           <h3 class="font-semibold">Free Resources</h3>
-          <p class="mt-2 text-neutral-300">Candlestick Pattern PDF සහ Chart Pattern PDF (දෙකම) purchase එකට අමතරව දෙනවා — practical cheat sheets ලෙස භාවිත කරන්න.</p>
+          <p class="mt-2 text-neutral-300">Candlestick + Chart Pattern PDFs — practical cheat sheets.</p>
         </div>
         <div class="glass rounded-2xl p-5">
           <h3 class="font-semibold">Mobile-size friendly</h3>
-          <p class="mt-2 text-neutral-300">UI එක mobile-first design එකක් ලෙස නිර්මාණය කරලා තියෙනවා — buttons විශාල, text readable, videos responsive.</p>
-        </div>
-        <div class="glass rounded-2xl p-5">
-          <h3 class="font-semibold">Easy Manual Delivery</h3>
-          <p class="mt-2 text-neutral-300">Payment proof එක verify කරලා, ඔබට view-only links + PDFs WhatsApp/Email මගින් එවන්නම් — සරල, පහසු process එකක්.</p>
+          <p class="mt-2 text-neutral-300">UI mobile-first design — buttons large, text readable, videos responsive.</p>
         </div>
         <div class="glass rounded-2xl p-5">
           <h3 class="font-semibold">Payment Confirmation & Course Link</h3>
-          <p class="mt-2 text-neutral-300">ඔබගේ payment proof අපට confirm වූ පසු, course link එක WhatsApp/Email මගින් ලබා දෙනවා — 100% verified delivery.</p>
+          <p class="mt-2 text-neutral-300">Payment proof confirm වූ පසු, course link WhatsApp/Email මගින් ලබා දේ — verified delivery.</p>
         </div>
         <div class="glass rounded-2xl p-5">
           <h3 class="font-semibold">Trading Motivation</h3>
-          <p class="mt-2 text-neutral-300">මෙම course එක ඔබට trading path එකේ super results ලබා දීමට උපකාරී වේ — strategies, charts, practical tips සමඟ ඔබේ profits වැඩි කරන්න.</p>
+          <p class="mt-2 text-neutral-300">Course එක ඔබේ trading path එකේ super results ලබා දීමට උපකාරී වේ — strategies, charts, practical tips සමඟ profits වැඩි කරන්න.</p>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <h3 class="font-semibold">Trust & Experience</h3>
+          <p class="mt-2 text-neutral-300">අපේ team 5+ වසරක real trading experience සමඟ — ඔබට accurate, real-world knowledge ලබා දේ.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="payment" class="py-12 bg-neutral-900 border-t border-neutral-800">
+  <section id="payment" class="py-12 bg-[#2b2b2b] border-t border-neutral-800">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-6">Payment Details</h2>
+      <h2 class="text-3xl font-bold mb-6 section-title">Payment Details</h2>
       <p class="mb-4">Manual Delivery — WhatsApp proof send කරන්න</p>
       <div class="glass p-6 rounded-2xl space-y-4">
         <p class="font-semibold">Commercial Bank</p>
         <p>Account Number: 8014799361<br>Account Holder: S C T FERNANDO<br>Katubadda Minicom Branch</p>
-        <button onclick="navigator.clipboard.writeText('8014799361')" class="bg-emerald-500 text-black px-4 py-2 rounded">Copy Account Number</button>
+        <button onclick="navigator.clipboard.writeText('8014799361')" class="bg-cyan-400 text-black px-4 py-2 rounded">Copy Account Number</button>
 
         <p class="font-semibold mt-4">Bank of Ceylon (BOC)</p>
         <p>Account Number: 0094742117<br>Account Holder: S C T FERNANDO<br>Moratuwa Branch (61)</p>
-        <button onclick="navigator.clipboard.writeText('0094742117')" class="bg-emerald-500 text-black px-4 py-2 rounded">Copy Account Number</button>
-      </div>
-
-      <div class="mt-6">
-        <a href="https://wa.me/94789645177" class="bg-green-500 text-black font-semibold px-6 py-3 rounded-xl">Send Proof on WhatsApp</a>
-        <p class="mt-2 text-neutral-400">Email: podibusinessteam@gmail.com</p>
-      </div>
-    </div>
-  </section>
-
-  <a href="https://wa.me/94789645177" class="floating-wa bg-green-500 text-black px-5 py-4 rounded-full shadow-lg">💬 WhatsApp</a>
-</
+        <button onclick="navigator.clip
