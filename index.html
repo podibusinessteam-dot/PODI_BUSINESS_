@@ -1,59 +1,138 @@
 <!doctype html>
 <html lang="si">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Forex Basic Course (සිංහල) — Limited Offer</title>
-  <style>
-    body{font-family: system-ui, Arial; margin:0; padding:0; background:#f0f4f8; color:#222;}
-    .wrap{max-width:900px;margin:20px auto;padding:20px;background:white;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
-    header{text-align:center;padding-bottom:15px;border-bottom:2px solid #e0e0e0;}
-    h1{font-size:28px;color:#0b74de;margin-bottom:5px;}
-    .price{font-size:22px;color:#28a745;font-weight:700;margin:8px 0;}
-    .small{font-size:14px;color:#555;}
-    .card{padding:20px;margin-top:20px;}
-    ul.features{margin-top:12px;padding-left:20px;}
-    ul.features li{margin-bottom:8px;line-height:1.5;}
-    .btn{display:inline-block;padding:14px 20px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:12px;transition:0.3s;color:white;}
-    .wh{background:#25D366;}
-    .wh:hover{background:#1ebe5d;}
-    .limited{color:#b33;font-weight:700;font-size:20px; animation: blink 1s infinite;}
-    @keyframes blink {50% {opacity:0;}}
-    footer{text-align:center;font-size:13px;color:#555;margin-top:24px;}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forex Basic Course (සිංහල) — Limited Offer</title>
+<style>
+body{font-family:system-ui, Arial; margin:0; padding:0; background:#eef2f8; color:#222;}
+.wrap{max-width:950px;margin:20px auto;padding:25px;background:white;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+header{text-align:center;padding-bottom:15px;border-bottom:2px solid #d0d0d0;}
+h1{font-size:28px;color:#0b74de;margin-bottom:5px;}
+.price{font-size:22px;color:#28a745;font-weight:700;margin:8px 0;}
+.small{font-size:14px;color:#555;}
+.card{padding:20px;margin-top:20px; overflow:hidden;}
+ul.features{margin-top:12px;padding-left:20px;}
+ul.features li{margin-bottom:12px;line-height:1.6;opacity:0; transform:translateX(-30px); animation: slideIn 0.6s forwards;}
+ul.features li:nth-child(1){animation-delay:0.1s;}
+ul.features li:nth-child(2){animation-delay:0.3s;}
+ul.features li:nth-child(3){animation-delay:0.5s;}
+ul.features li:nth-child(4){animation-delay:0.7s;}
+@keyframes slideIn{to{opacity:1; transform:translateX(0);}}
+.btn{display:inline-block;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:20px;transition:0.3s;color:white;font-size:16px;}
+.wh{background:#25D366;position:relative; z-index:1;}
+.wh:hover{background:#1ebe5d;}
+.limited{color:#b33;font-weight:700;font-size:22px; animation: blink 1s infinite;}
+@keyframes blink{50%{opacity:0;}}
+footer{text-align:center;font-size:13px;color:#555;margin-top:28px;}
+.highlight{color:#0b74de;font-weight:700;}
+.floating-btn{position:fixed;bottom:20px;right:20px;z-index:100;}
+.section{margin-top:25px;}
+.testimonial{background:#f4f9ff;padding:15px;border-radius:8px;margin-bottom:10px;}
+.faq-item{margin-bottom:12px;}
+.faq-question{cursor:pointer;font-weight:700;}
+.faq-answer{display:none;padding-left:10px;margin-top:4px;}
+.countdown{font-size:18px;color:#b33;font-weight:700;margin-top:8px;}
+
+/* Mobile friendly adjustments */
+@media(max-width:600px){
+ h1{font-size:24px;}
+ .price{font-size:20px;}
+ .btn{padding:12px 16px;font-size:14px;}
+ .wrap{padding:15px;}
+}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Forex Basic Course (සිංහල)</h1>
-      <div class="price">🎉 Limited Offer: Rs. 999 (Normal Rs. 10,000) 🎉</div>
-      <div class="small">Online Payment Only — Bank / Binance</div>
-    </header>
+<div class="wrap">
+<header>
+<h1>Forex Basic Course (සිංහල)</h1>
+<div class="price">🎉 Limited Offer: Rs. 999 <span class="highlight">(Normal Price Rs. 25,000)</span> 🎉</div>
+<div class="small">Online Payment Only — Bank / Binance</div>
+<div class="countdown" id="countdown">Offer ends in: 24:00:00</div>
+</header>
 
-    <div class="card">
-      <p><strong>📹 ඔබට ලැබෙන්නෙ:</strong></p>
-      <ul class="features">
-        <li>8 ක්‍රමවත් වීඩියෝ පාඩම් (සිංහල)</li>
-        <li>Candlestick සහ Chart Patterns PDF නොමිලේ 🎁</li>
-        <li>Practical trading tips + real examples</li>
-        <li>Lifetime access — ඕනෑම වෙලාවේ අධ්‍යයනය</li>
-      </ul>
+<div class="card">
+<p><strong>📹 ඔබට ලැබෙන්නෙ:</strong></p>
+<ul class="features">
+<li>8 ක්‍රමවත් වීඩියෝ පාඩම් (සිංහල)</li>
+<li>Candlestick සහ Chart Patterns PDF නොමිලේ 🎁</li>
+<li>Practical trading tips + real examples</li>
+<li>Lifetime access — ඕනෑම වෙලාවේ අධ්‍යයනය</li>
+</ul>
 
-      <p class="small">Small business trust — exaggerated claims නැහැ. <span class="limited">Limited Offer Rs. 999!</span></p>
+<p class="small">Small business trust — exaggerated claims නැහැ. <span class="limited">Limited Offer Rs. 999!</span></p>
 
-      <!-- WhatsApp button -->
-      <a class="btn wh" href="https://wa.me/94789645177?text=මම%20Forex%20Basic%20Course%20+%20Free%20PDFs%20ගන්න%20කැමතියි" target="_blank" rel="noopener">
-        💬 WhatsApp හරහා දැන් ඇනවුම් කරන්න
-      </a>
+<a class="btn wh" href="https://wa.me/94789645177?text=මම%20Forex%20Basic%20Course%20+%20Free%20PDFs%20ගන්න%20කැමතියි" target="_blank" rel="noopener">
+💬 WhatsApp හරහා දැන් ඇනවුම් කරන්න
+</a>
 
-      <p class="small" style="margin-top:12px;">
-        Questions? Email: <a href="mailto:podibusinessteam@gmail.com">podibusinessteam@gmail.com</a>
-      </p>
-    </div>
+<p class="small" style="margin-top:12px;">
+Questions? Email: <a href="mailto:podibusinessteam@gmail.com" style="color:#0b74de;">podibusinessteam@gmail.com</a>
+</p>
+</div>
 
-    <footer>
-      © Pod Business Team — Trustworthy Small Business
-    </footer>
-  </div>
+<!-- Testimonials -->
+<div class="section">
+<h2>🌟 Testimonials</h2>
+<div class="testimonial">"මේ course මගින් මට Forex trading පිළිබඳ අවබෝධය වැඩි වුණා!" — Nimal S.</div>
+<div class="testimonial">"Simple Sinhala lessons, Free PDFs, ඉතාම helpful!" — Kasun P.</div>
+</div>
+
+<!-- FAQ -->
+<div class="section">
+<h2>❓ FAQ</h2>
+<div class="faq">
+<div class="faq-item">
+<div class="faq-question">1. මේක Sinhala ද?</div>
+<div class="faq-answer">ඔව්, සම්පූර්ණ Sinhala language lessons.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">2. Payment කොහොමද?</div>
+<div class="faq-answer">Online payment only — Bank / Binance.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">3. PDFs free ද?</div>
+<div class="faq-answer">ඔව්, Candlestick + Chart Patterns PDFs නොමිලේ.</div>
+</div>
+</div>
+</div>
+
+<footer>
+© Pod Business Team — Trustworthy Small Business
+</footer>
+</div>
+
+<!-- Floating Buy Now button -->
+<div class="floating-btn">
+<a class="btn wh" href="https://wa.me/94789645177?text=මම%20Forex%20Basic%20Course%20+%20Free%20PDFs%20ගන්න%20කැමතියි" target="_blank" rel="noopener">
+💬 Buy Now
+</a>
+</div>
+
+<script>
+// Countdown timer (24 hours from page load)
+function startCountdown(){
+const countdownEl=document.getElementById('countdown');
+const endTime=new Date().getTime()+24*60*60*1000;
+setInterval(()=>{
+const now=new Date().getTime();
+const distance=endTime-now;
+const hours=Math.floor((distance%(24*60*60*1000))/(1000*60*60));
+const minutes=Math.floor((distance%(60*60*1000))/(1000*60));
+const seconds=Math.floor((distance%(60*1000))/1000);
+countdownEl.textContent=`Offer ends in: ${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+},1000);
+}
+startCountdown();
+
+// FAQ toggle
+document.querySelectorAll('.faq-question').forEach(q=>{
+q.addEventListener('click',()=>{
+const a=q.nextElementSibling;
+a.style.display=(a.style.display==='block')?'none':'block';
+});
+});
+</script>
 </body>
 </html>
